@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+
+*, *::before, *::after { box-sizing: inherit; }
+:root {
+    --primary: white;
+    --dark: rgba(51, 51, 51, 0.746) ;
+    --light: white;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.9);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    box-sizing: border-box;
+    color: var(--primary);
+}
+body{
+    background: linear-gradient( 90deg, #7f00ff, #e100ff);
+    margin: 30px;
+}
+h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px #e100ff;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.wrapper{
+    display: grid;
+    gap: 20px;
+}
+.options {
+    display: grid;
+    grid-gap: 10px;
+    column-gap: 10px;
+    justify-items: center;
+    grid-template-columns: repeat(4,2fr);
+    grid-template-areas:
+    '. first second .'
+}
+img{
+    height: 130px;
+    padding-left: 30px;
+}
+#first {
+    grid-area: first;
+    background-color: white;
+    box-shadow: 4px 4px #e100ff;
+    border-radius: 5%;
+    padding: 30px;
+    width: 250px;
+}
+#first:hover{
+    transform: scale(1.05);
+    transition: all 0.7s ease;
+}
+#second {
+    grid-area: second;
+    background-color: white;
+    box-shadow: 4px 4px #e100ff;
+    border-radius: 5%;
+    padding: 30px;
+    width: 250px;
+}
+#second:hover{
+    transform: scale(1.05);
+    transition: all 0.7s ease;
+}
+.title{
+    display: grid;
+    justify-items: center;
+    padding-top: 25px;
+}
+a {
+    text-decoration: none;
+}
+.link{
+    color: #7f00ff;
+}
+.flink{
+    color: white;
+}
+footer{
+    display: grid;
+    justify-items: center;
+    padding-top: 90px;
+    font-size: 10px;
+}
+@media (max-width: 440px){
+  body{
+    background: #7f00ff;
+    margin: 50px;
+}
+  .options {
+    display: grid;
+    grid-gap: 35px;
+    column-gap: 10px;
+    justify-items: center;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-areas:
+    '. first .'
+    '. second .'
+}
+  h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px #e100ff;
+    text-align: center;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+img{
+    height: 130px;
+    padding-left: 30px;
+}
+#first {
+    grid-area: first;
+    background-color: white;
+    box-shadow: 4px 4px #e100ff;
+    border-radius: 5%;
+    padding: 30px;
+    width: 250px;
+}
+#first:hover{
+    transform: scale(1.03);
+    transition: all 0.7s ease;
+}
+#second {
+    grid-area: second;
+    background-color: white;
+    box-shadow: 4px 4px #e100ff;
+    border-radius: 5%;
+    padding: 30px;
+    width: 250px;
+}
+#second:hover{
+    transform: scale(1.03);
+    transition: all 0.7s ease;
+  footer{
+    display: grid;
+    justify-items: center;
+    padding-top: 90px;
+    font-size: 10px;
+ }
+}
+
+
+
