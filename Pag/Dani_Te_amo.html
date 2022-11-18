@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">	
+	
+	<!-- <link href="https://vjs.zencdn.net/7.2/video-js.min.css" rel="stylesheet"> -->
+	<!-- <script src="https://vjs.zencdn.net/7.2/video.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/video-js.css">
+	<script src="js/video.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="icon" href="../../img/iconos/pag1.ico"> 
+	<title>Sala De Videos</title>
+</head>
+<body>
+	<header>
+		<h1 class="titulo"><font zise="5" face="Cambria">Esta Cancion! - Es Para Ti♡</font></h1>
+	</header>
+
+	<main>
+		<div class="contenedor">
+			<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+				<source src="video/Feliz cumpleaños mi vida te amo se que no lo hice muy bien pero de verdad es de todo corazón❤️ teamo.mp4" type="video/mp4">
+			</video>
+	
+			<article>
+				<font zise="5" face="Lucida Bright"><h2>Mensaje para mi chica♡</h2><br></font>
+				💠 Feliz cumpleaños mi vida te amo, este regalo te lo hice con mucho amor  y se que probablemente no estarás pasando por un buen momento pero amor sea lo que sea que pase siempre estaré aquí meno te amo mi niña eres la mejor y estoy muy orgulloso de ti y de todo lo que has logrado te amo♡<br>
+				<br>
+				💠 <a href="feliz-cumple-amor.vercel.app" class="texto_volver"> Volver al inicio</a> <br>
+			</article>
+		</div>
+	</main>
+
+	<script>
+		var reproductor = videojs('fm-video', {
+			fluid: true
+		});
+	</script>
+</body>
+</html>
